@@ -62,7 +62,7 @@ function PatientDirectory() {
       {loading ? (
         <div>Loading...</div>
       ) : patients.length === 0 ? (
-        <div className="text-center text-gray-500">No data found.</div>
+        <div className="text-center text-gray-500">No data found for this Issue.</div>
       ) : view === 'card' ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {patients.map((patient) => (
